@@ -40,8 +40,8 @@ app.configure(function() {
 
 
 //require('./app/routes.js')(app, passport,server); 
-app.get('/', function(request, response) {
-		response.render('login.html');
+app.get('/app', function(request, response) {
+		response.render('index.html');
 	});
 server.listen(port);
 console.log('Listening  to  port ' + port);
