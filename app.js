@@ -39,11 +39,11 @@ app.configure(function() {
 
 
 
-require('./app/routes.js')(app, passport,server); 
-
+//require('./app/routes.js')(app, passport,server); 
+app.get('/', function(request, response) {
+		response.render('login.html');
+	});
 server.listen(port);
 console.log('Listening  to  port ' + port);
 
-app.get('/login.html', function (req, res) {
-  res.send('Hello World!');
-});
+
