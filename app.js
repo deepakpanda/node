@@ -44,6 +44,6 @@ require('./app/routes.js')(app, passport,server);
 server.listen(port);
 console.log('Listening  to  port ' + port);
 
-app.get('/', function (req, res) {
+app.get('/login.html', function (req, res) {
   res.send('Hello World!');
 });
